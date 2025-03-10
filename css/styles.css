@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.container {
+  max-width: 1740px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0 22px;
+}
+
+.logo svg {
+  transition: color 0.3s ease;
+}
+
+.logo:hover svg {
+  color: #00a9bd;
+}
+
+.menu__list {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__item {
+  position: relative;
+  font-size: 18px;
+}
+
+.menu__item::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu__item:hover::after {
+  opacity: 1;
+}
+
+.menu__item:hover .menu__link {
+  opacity: 0;
+}
+
+.menu__link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.social__link {
+  display: inline-block;
+}
+
+.social__link svg {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social__link:hover svg {
+  color: #00a9bd;
+  transform: scale(1.25);
+}
