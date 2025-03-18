@@ -51,6 +51,22 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title span {
+  display: inline-block;
+  padding: 0 40px;
+  background-image: url(../images/decor-line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -229,6 +245,9 @@ body {
 
 .tour-info__img {
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tour-info__img-descr {
@@ -248,19 +267,8 @@ body {
 }
 
 .tour-info__title {
-  font-weight: 400;
-  font-size: 32px;
-  text-transform: uppercase;
+  text-align: left;
   margin-bottom: 30px;
-}
-
-.tour-info__title span {
-  display: inline-block;
-  padding: 0 40px;
-  background-image: url(../images/decor-line.svg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
 }
 
 .tour-info__addcontent {
@@ -295,4 +303,76 @@ body {
   margin-top: auto;
   align-self: flex-start;
   margin-left: 70px;
+}
+
+.tour-program {
+  padding: 150px 0 120px;
+}
+
+.tour-program__title {
+  margin-bottom: 50px;
+}
+
+.tour-program__list {
+  display: grid;
+  gap: 10px 0;
+  counter-reset: number;
+}
+
+.tour-program__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tour-program__item:nth-child(even) .tour-program__content {
+  order: 1;
+  padding-right: 30px;
+}
+
+.tour-program__content {
+  padding-left: 50px;
+  padding-right: 90px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.tour-program__content-box {
+  position: relative;
+  counter-increment: number;
+}
+
+.tour-program__content-box svg {
+  color: #ffe093;
+  transition: color 0.2s ease;
+}
+
+.tour-program__item:hover svg {
+  color: #00a9bd;
+}
+
+.tour-program__content-box::after {
+  content: "0" counter(number);
+  font-size: 60px;
+  bottom: 15%;
+}
+
+.tour-program__item:nth-child(n + 10) .tour-program__content-box::after {
+  content: counter(number);
+}
+
+.tour-program__content-box::before {
+  content: "Day";
+  font-size: 32px;
+  top: 20%;
+}
+
+.tour-program__content-box::after,
+.tour-program__content-box::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
