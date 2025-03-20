@@ -376,3 +376,40 @@ body {
   font-weight: 700;
   text-align: center;
 }
+
+.slider {
+  background-color: #b6e8ee;
+  padding: 50px 0 65px;
+  text-align: center;
+}
+
+.slider__title {
+  margin-bottom: 35px;
+}
+
+.slider__img {
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.slider__button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #00a9bd;
+  transition: color 0.2s ease;
+}
+
+.button-prev {
+  left: 0;
+}
+
+.button-next {
+  right: 0;
+}
+
+.slider__button:hover {
+  color: #ffe093;
+}

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Disney Adventure</title>
 </head>
@@ -211,7 +212,41 @@
         </ul>
       </div>
     </section>
+    <section class="slider">
+      <div class="container">
+        <h2 class="title slider__title">
+          <span>top impressions you will get</span>
+        </h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="slider__img" src="images/slide/1.jpg" alt="Image">
+            </div>
+            <div class="swiper-slide">
+              <img class="slider__img" src="images/slide/2.jpg" alt="Image">
+            </div>
+            <div class="swiper-slide">
+              <img class="slider__img" src="images/slide/3.jpg" alt="Image">
+            </div>
+          </div>
+          <div class="button-prev slider__button">
+            <svg width="78" height="28">
+              <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="button-next slider__button">
+            <svg width="72" height="28">
+              <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
