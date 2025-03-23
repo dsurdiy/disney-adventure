@@ -74,11 +74,11 @@ body {
   padding: 11px 0 5.5px;
 }
 
-.logo svg {
+.header__logo svg {
   transition: color 0.3s ease;
 }
 
-.logo:hover svg {
+.header__logo:hover svg {
   color: #00a9bd;
 }
 
@@ -132,11 +132,11 @@ body {
   display: inline-block;
 }
 
-.social__link svg {
+.header__social .social__link svg {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social__link:hover svg {
+.header__social .social__link:hover svg {
   color: #00a9bd;
   transform: scale(1.25);
 }
@@ -507,4 +507,50 @@ body {
   width: 25px;
   height: 25px;
   background-image: url(../images/info-ico.svg);
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #00a9bd;
+  color: #fff;
+}
+
+.footer__inner {
+  display: flex;
+  gap: 0 200px;
+}
+
+.footer__logo {
+  margin-right: auto;
+  align-self: center;
+}
+
+.footer__nav {
+  font-weight: 500;
+}
+
+.footer__nav-item + .footer__nav-item {
+  margin-top: 20px;
+}
+
+.footer__contacts-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer__address {
+  margin-bottom: 55px;
+  font-style: normal;
+}
+
+.footer__address-name {
+  margin-bottom: 25px;
+}
+
+.footer__list {
+  margin-right: 140px;
+}
+
+.footer__list-item + .footer__list-item {
+  margin-top: 20px;
 }
