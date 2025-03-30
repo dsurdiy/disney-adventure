@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Disney Adventure</title>
 </head>
 
@@ -20,6 +21,9 @@
           </svg>
         </a>
         <nav class="menu">
+          <button class="menu__btn">
+            <span></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__item" data-text="Travel formats">
               <a class="menu__link" href="#">Travel formats</a>
@@ -60,7 +64,7 @@
         </ul>
       </div>
     </div>
-    <div class="header__content">
+    <div class="header__content" style="background-image: url(../images/header-bg.jpg);">
       <div class="container">
         <div class="header__content-inner">
           <h1 class="header__title">
@@ -138,78 +142,84 @@
     </section>
     <section class="tour-program">
       <div class="container">
-        <h2 class="tour-program__title title">
-          <span>tour program</span>
-        </h2>
-        <ul class="tour-program__list">
-          <li class="tour-program__item">
-            <div class="tour-program__content">
-              <div class="tour-program__content-box">
-                <svg width="198" height="170">
-                  <use xlink:href="images/sprite.svg#decor-circle"></use>
-                </svg>
+        <div class="tour-program__inner">
+          <h2 class="tour-program__title title">
+            <span>tour program</span>
+          </h2>
+          <ul class="tour-program__list">
+            <li class="tour-program__item">
+              <div class="tour-program__content">
+                <div class="tour-program__content-box">
+                  <svg width="198" height="170">
+                    <use xlink:href="images/sprite.svg#decor-circle"></use>
+                  </svg>
+                </div>
+                <p class="tour-program__text">
+                  Arrive in Auckland. Spend the day in the country's largest city: visit the Auckland Tower for
+                  panoramic
+                  views of the
+                  city, stroll along the Viaduct Promenade, and in the evening, sample local cuisine and wines at the
+                  restaurants of
+                  Wynyard Road.
+                </p>
               </div>
-              <p class="tour-program__text">
-                Arrive in Auckland. Spend the day in the country's largest city: visit the Auckland Tower for panoramic
-                views of the
-                city, stroll along the Viaduct Promenade, and in the evening, sample local cuisine and wines at the
-                restaurants of
-                Wynyard Road.
-              </p>
-            </div>
-            <img class="tour-program__img" src="images/gallery/6.jpg" alt="Image">
-          </li>
-          <li class="tour-program__item">
-            <div class="tour-program__content">
-              <div class="tour-program__content-box">
-                <svg width="198" height="170">
-                  <use xlink:href="images/sprite.svg#decor-circle"></use>
-                </svg>
+              <img class="tour-program__img" src="images/gallery/6.jpg" alt="Image">
+            </li>
+            <li class="tour-program__item">
+              <div class="tour-program__content">
+                <div class="tour-program__content-box">
+                  <svg width="198" height="170">
+                    <use xlink:href="images/sprite.svg#decor-circle"></use>
+                  </svg>
+                </div>
+                <p class="tour-program__text">
+                  Head to Rotorua (approximately 3 hours drive), known for its geothermal springs and Maori culture.
+                  Visit
+                  Wai-O-Tapu
+                  Geothermal Park with geysers and colorful lakes, and Te Puia Maori Park for a glimpse of Haki
+                  traditions
+                  and dances.
+                </p>
               </div>
-              <p class="tour-program__text">
-                Head to Rotorua (approximately 3 hours drive), known for its geothermal springs and Maori culture. Visit
-                Wai-O-Tapu
-                Geothermal Park with geysers and colorful lakes, and Te Puia Maori Park for a glimpse of Haki traditions
-                and dances.
-              </p>
-            </div>
-            <img class="tour-program__img" src="images/gallery/7.jpg" alt="Image">
-          </li>
-          <li class="tour-program__item">
-            <div class="tour-program__content">
-              <div class="tour-program__content-box">
-                <svg width="198" height="170">
-                  <use xlink:href="images/sprite.svg#decor-circle"></use>
-                </svg>
+              <img class="tour-program__img" src="images/gallery/7.jpg" alt="Image">
+            </li>
+            <li class="tour-program__item">
+              <div class="tour-program__content">
+                <div class="tour-program__content-box">
+                  <svg width="198" height="170">
+                    <use xlink:href="images/sprite.svg#decor-circle"></use>
+                  </svg>
+                </div>
+                <p class="tour-program__text">
+                  Early departure to Tongariro National Park - New Zealand's first national park, known for its active
+                  volcanoes. A walk
+                  along the Tongariro Alpine Crossing route will allow you to see the volcanoes Ngauruhoe and Ruapehu,
+                  picturesque emerald
+                  lakes and unforgettable views.
+                </p>
               </div>
-              <p class="tour-program__text">
-                Early departure to Tongariro National Park - New Zealand's first national park, known for its active
-                volcanoes. A walk
-                along the Tongariro Alpine Crossing route will allow you to see the volcanoes Ngauruhoe and Ruapehu,
-                picturesque emerald
-                lakes and unforgettable views.
-              </p>
-            </div>
-            <img class="tour-program__img" src="images/gallery/8.jpg" alt="Image">
-          </li>
-          <li class="tour-program__item">
-            <div class="tour-program__content">
-              <div class="tour-program__content-box">
-                <svg width="198" height="170">
-                  <use xlink:href="images/sprite.svg#decor-circle"></use>
-                </svg>
+              <img class="tour-program__img" src="images/gallery/8.jpg" alt="Image">
+            </li>
+            <li class="tour-program__item">
+              <div class="tour-program__content">
+                <div class="tour-program__content-box">
+                  <svg width="198" height="170">
+                    <use xlink:href="images/sprite.svg#decor-circle"></use>
+                  </svg>
+                </div>
+                <p class="tour-program__text">
+                  Arrive in Auckland. Spend the day in the country's largest city: visit the Auckland Tower for
+                  panoramic
+                  views of the
+                  city, stroll along the Viaduct Promenade, and in the evening, sample local cuisine and wines at the
+                  restaurants of
+                  Wynyard Road.
+                </p>
               </div>
-              <p class="tour-program__text">
-                Arrive in Auckland. Spend the day in the country's largest city: visit the Auckland Tower for panoramic
-                views of the
-                city, stroll along the Viaduct Promenade, and in the evening, sample local cuisine and wines at the
-                restaurants of
-                Wynyard Road.
-              </p>
-            </div>
-            <img class="tour-program__img" src="images/gallery/9.jpg" alt="Image">
-          </li>
-        </ul>
+              <img class="tour-program__img" src="images/gallery/9.jpg" alt="Image">
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="slider">
@@ -229,6 +239,7 @@
               <img class="slider__img" src="images/slide/3.jpg" alt="Image">
             </div>
           </div>
+          <div class="swiper-pagination"></div>
           <div class="button-prev slider__button">
             <svg width="78" height="28">
               <use xlink:href="images/sprite.svg#arrow-left"></use>
